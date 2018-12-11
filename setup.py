@@ -36,8 +36,12 @@ setup(
 
     setup_requires=[],
     tests_require=[],
-    
-    license="",  
+
+    entry_points={
+        'console_scripts': ['hal4000=storm_control.hal4000.__main__:main'],
+    },
+
+    license="",
     keywords='storm,microscopy',
     classifiers=[
         'Development Status :: 4 - Beta',
