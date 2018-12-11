@@ -718,7 +718,7 @@ class HalCore(QtCore.QObject):
             self.queued_messages_timer.start()
 
 
-if (__name__ == "__main__"):
+def main():
 
     # Use both so that we can pass sys.argv to QApplication.
     import argparse
@@ -763,6 +763,8 @@ if (__name__ == "__main__"):
     
     app.exec_()
 
+if (__name__ == "__main__"):
+    main()
 
 #
 # The MIT License
